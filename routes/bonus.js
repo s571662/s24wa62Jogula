@@ -16,6 +16,7 @@ router.get('/', function (req, res, next) {
 
 
     res.send(`Math.round applied on ${num1} and ${num2} is ${result1} and ${result2}`);
+    
 });
 
 module.exports = router;
