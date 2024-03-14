@@ -5,16 +5,17 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function (req, res, next) {
 
-    var x = Math.floor(Math.random());
+    var x = (Math.random());
+    console.log(x);
 
     if (req.query.x){
-        x= parseInt(req.query.x);
+        x= (req.query.x);
     }
-    function round() {
+    function round(x) {
         return Math.round(x);
     }
 
-    console.log(round(x))
+    console.log(round(x));
 
 
     res.send(`Math.round applied to ${x} is ${round(x)} `);
